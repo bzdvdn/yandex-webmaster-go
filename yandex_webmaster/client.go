@@ -95,7 +95,7 @@ func (c *Client) getUserID() (int, error) {
 // base method for api requests
 func (c *Client) sendAPIRequest(method string, endpoint string, body interface{}, result interface{}) (*http.Response, error) {
 	fullPath := apiBaseUrl + endpoint
-	fmt.Println(fullPath)
+	// fmt.Println(fullPath)
 	var buf io.ReadWriter
 	if body != nil {
 		buf = &bytes.Buffer{}
